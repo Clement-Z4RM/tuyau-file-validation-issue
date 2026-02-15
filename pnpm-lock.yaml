@@ -35,6 +35,9 @@ importers:
       '@tuyau/core':
         specifier: ^0.2.1
         version: 0.2.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0))
+      '@tuyau/openapi':
+        specifier: ^1.0.2
+        version: 1.0.2(@tuyau/core@0.2.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0)))
       '@vinejs/vine':
         specifier: ^2.1.0
         version: 2.1.0
@@ -56,13 +59,13 @@ importers:
         version: 1.4.0
       '@japa/api-client':
         specifier: ^2.0.3
-        version: 2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4))(@japa/runner@3.1.4)
+        version: 2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3))(@japa/runner@3.1.4)
       '@japa/assert':
         specifier: ^3.0.0
-        version: 3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4)
+        version: 3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3)
       '@japa/plugin-adonisjs':
         specifier: ^3.0.1
-        version: 3.0.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0))(@japa/api-client@2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4))(@japa/runner@3.1.4))(@japa/runner@3.1.4)
+        version: 3.0.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0))(@japa/api-client@2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3))(@japa/runner@3.1.4))(@japa/runner@3.1.4)
       '@japa/runner':
         specifier: ^3.1.4
         version: 3.1.4
@@ -820,6 +823,12 @@ packages:
     peerDependencies:
       '@adonisjs/core': ^6.2.0
 
+  '@tuyau/openapi@1.0.2':
+    resolution: {integrity: sha512-chuIYT+Aad1RhiLEily+AReGx7WLkaDlYOMCyw374SWRJtyiovwgXkpJu138SNhPK3cafbwT4fW2HYZ8x2IgyQ==}
+    engines: {node: '>=20.6.0'}
+    peerDependencies:
+      '@tuyau/core': '>=0.3.2'
+
   '@tuyau/utils@0.0.4':
     resolution: {integrity: sha512-ex6CAJNLiTuOvx7nUrgs8FwNG/t88Mi8QTLSO3muHbB6vBSpYimZ6iSUkk4cjEFd4XDy0y+24GDgXKoBfGf4ag==}
 
@@ -1344,6 +1353,9 @@ packages:
   define-properties@1.2.1:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
     engines: {node: '>= 0.4'}
+
+  defu@6.1.4:
+    resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
 
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
@@ -2023,6 +2035,10 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
+  json-to-pretty-yaml@1.2.2:
+    resolution: {integrity: sha512-rvm6hunfCcqegwYaG5T4yKJWxc9FXFgBVrcTZ4XfSVRwa5HA/Xs+vB/Eo9treYYHCeNM0nrSUr82V/M31Urc7A==}
+    engines: {node: '>= 0.2.0'}
+
   jsonschema@1.4.1:
     resolution: {integrity: sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==}
 
@@ -2240,6 +2256,9 @@ packages:
 
   openapi-types@1.3.4:
     resolution: {integrity: sha512-h8rADpW3k/wepLdERKF0VKMAPdoFYNQCLGPmc/f8sgQ2dxUy+7sY4WAX2XDUDjhKTjbJVbxxofLkzy7f1/tE4g==}
+
+  openapi-types@12.1.3:
+    resolution: {integrity: sha512-N4YtSYJqghVu4iek2ZUvcN/0aqH1kRDuNqzcycDxhOUpg7GdvLa2F3DgS6yBNhInhv2r/6I0Flkn7CqL8+nIcw==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -2513,6 +2532,12 @@ packages:
   regjsparser@0.10.0:
     resolution: {integrity: sha512-qx+xQGZVsy55CH0a1hiVwHmqjLryfh7wQyF5HO07XJ9f7dQMY/gPQHhlyDkIzJKC+x2fUCpCcUODUUUFrm7SHA==}
     hasBin: true
+
+  remedial@1.0.8:
+    resolution: {integrity: sha512-/62tYiOe6DzS5BqVsNpH/nkGlX45C/Sp6V+NtiN6JQNS1Viay7cWkazmRkrQrdFj2eshDe96SIQNIoMxqhzBOg==}
+
+  remove-trailing-spaces@1.0.9:
+    resolution: {integrity: sha512-xzG7w5IRijvIkHIjDk65URsJJ7k4J95wmcArY5PRcmjldIOl7oTvG8+X2Ag690R7SfwiOcHrWZKVc1Pp5WIOzA==}
 
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
@@ -3254,14 +3279,14 @@ snapshots:
 
   '@apidevtools/swagger-methods@3.0.2': {}
 
-  '@apidevtools/swagger-parser@10.0.3(openapi-types@1.3.4)':
+  '@apidevtools/swagger-parser@10.0.3(openapi-types@12.1.3)':
     dependencies:
       '@apidevtools/json-schema-ref-parser': 9.1.2
       '@apidevtools/openapi-schemas': 2.1.0
       '@apidevtools/swagger-methods': 3.0.2
       '@jsdevtools/ono': 7.1.3
       call-me-maybe: 1.0.2
-      openapi-types: 1.3.4
+      openapi-types: 12.1.3
       z-schema: 5.0.5
 
   '@arr/every@1.0.1': {}
@@ -3423,7 +3448,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.1': {}
 
-  '@japa/api-client@2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4))(@japa/runner@3.1.4)':
+  '@japa/api-client@2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3))(@japa/runner@3.1.4)':
     dependencies:
       '@japa/runner': 3.1.4
       '@poppinss/hooks': 7.2.4
@@ -3433,16 +3458,16 @@ snapshots:
       set-cookie-parser: 2.7.0
       superagent: 8.1.2
     optionalDependencies:
-      '@japa/assert': 3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4)
+      '@japa/assert': 3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4)':
+  '@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3)':
     dependencies:
       '@japa/runner': 3.1.4
       '@poppinss/macroable': 1.0.3
       '@types/chai': 4.3.20
-      api-contract-validator: 2.2.8(openapi-types@1.3.4)
+      api-contract-validator: 2.2.8(openapi-types@12.1.3)
       chai: 5.1.1
     transitivePeerDependencies:
       - openapi-types
@@ -3465,12 +3490,12 @@ snapshots:
       youch: 3.3.4
       youch-terminal: 2.2.3
 
-  '@japa/plugin-adonisjs@3.0.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0))(@japa/api-client@2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4))(@japa/runner@3.1.4))(@japa/runner@3.1.4)':
+  '@japa/plugin-adonisjs@3.0.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0))(@japa/api-client@2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3))(@japa/runner@3.1.4))(@japa/runner@3.1.4)':
     dependencies:
       '@adonisjs/core': 6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0)
       '@japa/runner': 3.1.4
     optionalDependencies:
-      '@japa/api-client': 2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4))(@japa/runner@3.1.4)
+      '@japa/api-client': 2.0.3(@japa/assert@3.0.0(@japa/runner@3.1.4)(openapi-types@12.1.3))(@japa/runner@3.1.4)
 
   '@japa/runner@3.1.4':
     dependencies:
@@ -3755,6 +3780,13 @@ snapshots:
       '@adonisjs/core': 6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0)
       ts-morph: 23.0.0
 
+  '@tuyau/openapi@1.0.2(@tuyau/core@0.2.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0)))':
+    dependencies:
+      '@tuyau/core': 0.2.1(@adonisjs/core@6.14.1(@adonisjs/assembler@7.8.2(typescript@5.6.3))(@vinejs/vine@2.1.0))
+      defu: 6.1.4
+      json-to-pretty-yaml: 1.2.2
+      openapi-types: 12.1.3
+
   '@tuyau/utils@0.0.4': {}
 
   '@types/bytes@3.1.4': {}
@@ -3956,9 +3988,9 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  api-contract-validator@2.2.8(openapi-types@1.3.4):
+  api-contract-validator@2.2.8(openapi-types@12.1.3):
     dependencies:
-      api-schema-builder: 2.0.11(openapi-types@1.3.4)
+      api-schema-builder: 2.0.11(openapi-types@12.1.3)
       chalk: 3.0.0
       columnify: 1.6.0
       jest-diff: 25.5.0
@@ -3970,7 +4002,7 @@ snapshots:
     transitivePeerDependencies:
       - openapi-types
 
-  api-schema-builder@2.0.11(openapi-types@1.3.4):
+  api-schema-builder@2.0.11(openapi-types@12.1.3):
     dependencies:
       ajv: 6.12.6
       clone-deep: 4.0.1
@@ -3979,7 +4011,7 @@ snapshots:
       json-schema-deref-sync: 0.14.0
       lodash.get: 4.4.2
       openapi-schema-validator: 3.0.3
-      swagger-parser: 10.0.3(openapi-types@1.3.4)
+      swagger-parser: 10.0.3(openapi-types@12.1.3)
     transitivePeerDependencies:
       - openapi-types
 
@@ -4307,6 +4339,8 @@ snapshots:
       define-data-property: 1.1.4
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
+
+  defu@6.1.4: {}
 
   delayed-stream@1.0.0: {}
 
@@ -5028,6 +5062,11 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
+  json-to-pretty-yaml@1.2.2:
+    dependencies:
+      remedial: 1.0.8
+      remove-trailing-spaces: 1.0.9
+
   jsonschema@1.4.1: {}
 
   junk@4.0.1: {}
@@ -5207,6 +5246,8 @@ snapshots:
       swagger-schema-official: 2.0.0-bab6bed
 
   openapi-types@1.3.4: {}
+
+  openapi-types@12.1.3: {}
 
   optionator@0.9.4:
     dependencies:
@@ -5492,6 +5533,10 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
+  remedial@1.0.8: {}
+
+  remove-trailing-spaces@1.0.9: {}
+
   resolve-from@4.0.0: {}
 
   resolve@1.22.8:
@@ -5746,9 +5791,9 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  swagger-parser@10.0.3(openapi-types@1.3.4):
+  swagger-parser@10.0.3(openapi-types@12.1.3):
     dependencies:
-      '@apidevtools/swagger-parser': 10.0.3(openapi-types@1.3.4)
+      '@apidevtools/swagger-parser': 10.0.3(openapi-types@12.1.3)
     transitivePeerDependencies:
       - openapi-types
 
